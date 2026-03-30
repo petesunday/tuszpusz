@@ -6,7 +6,9 @@ export const sheriffConfig: SheriffConfig = {
     'src/app': {
       core: 'type:core',
       shared: {
+        utils: ['domain:shared', 'type:util'],
         '<type>': ['domain:shared', 'type:<type>'],
+        '<type>/<module>': ['domain:shared', 'type:<type>'],
       },
       // When you add a domain, follow this pattern:
       // <domain>: {

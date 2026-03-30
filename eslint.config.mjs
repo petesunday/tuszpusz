@@ -31,7 +31,9 @@ export default defineConfig(
     processor: angular.processInlineTemplates,
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['sheriff.config.ts'],
+        },
       },
     },
     plugins: {
@@ -41,7 +43,7 @@ export default defineConfig(
     rules: {
       '@angular-eslint/directive-selector': [
         'error',
-        { type: 'attribute', prefix: ['tp', 'z'], style: 'camelCase' },
+        { type: 'attribute', prefix: ['tp', 'z', 'zard'], style: 'camelCase' },
       ],
       '@angular-eslint/component-selector': [
         'error',
