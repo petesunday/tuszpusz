@@ -41,11 +41,11 @@ export default defineConfig(
     rules: {
       '@angular-eslint/directive-selector': [
         'error',
-        { type: 'attribute', prefix: 'tp', style: 'camelCase' },
+        { type: 'attribute', prefix: ['tp', 'z'], style: 'camelCase' },
       ],
       '@angular-eslint/component-selector': [
         'error',
-        { type: 'element', prefix: 'tp', style: 'kebab-case' },
+        { type: 'element', prefix: ['tp', 'z'], style: 'kebab-case' },
       ],
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
