@@ -16,7 +16,7 @@ import {
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideLoaderCircle } from '@ng-icons/lucide';
 
-import { mergeClasses } from '@/shared/utils';
+import { mergeClasses } from '@/shared/util';
 
 import {
   buttonVariants,
